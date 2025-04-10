@@ -3,132 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAN-VTC | Chauffeur Privé</title>
+  <title>VTC Prestige</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header img.logo {
-      max-width: 200px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-    }
-    nav a {
-      color: #fff;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background-color: #575757;
-    }
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .contact-info {
-      background-color: #fff;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      background-color: #000;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #444;
-    }
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      margin-top: 40px;
-    }
-    .profile-img {
-      width: 100%;
-      max-width: 600px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #111; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    section { padding: 40px 20px; }
+    .services, .tarifs { background: #f5f5f5; }
+    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; }
+    input, textarea { padding: 10px; margin: 10px 0; }
+    button { padding: 10px; background: #111; color: white; border: none; cursor: pointer; }
+    footer { text-align: center; padding: 20px; background: #222; color: white; }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="LOGO VTC.jpg" alt="Logo MAN-VTC" class="logo">
-    <h1>MAN-VTC</h1>
-    <p>Ponctualité, Confort, Excellence</p>
+    <h1>VTC Prestige</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#reservation">Réservation</a>
-  </nav>
+  <section>
+    <h2>Bienvenue chez VTC Prestige</h2>
+    <p>Service de transport privé haut de gamme. Ponctualité, confort et sécurité garantis.</p>
+  </section>
 
-  <section id="services">
+  <section id="services" class="services">
     <h2>Nos Services</h2>
-    <p>MAN-VTC vous propose des trajets confortables, ponctuels et sécurisés dans toute la région. Transferts aéroports, gares, événements privés ou professionnels.</p>
-    <img src="photo profile.jpg" alt="Voiture MAN VTC" class="profile-img">
+    <ul>
+      <li>Transfert aéroport</li>
+      <li>Chauffeur privé pour événements</li>
+      <li>Longues distances</li>
+      <li>Disponibilité 24h/24 - 7j/7</li>
+    </ul>
   </section>
 
-  <section id="contact" class="contact-info">
-    <h2>Contact</h2>
-    <p>Téléphone : <a href="tel:+33744883147">07 44 88 31 47</a></p>
-    <p>Email : <a href="mailto:manvtc85@gmail.com">manvtc85@gmail.com</a></p>
+  <section id="tarifs" class="tarifs">
+    <h2>Tarifs indicatifs</h2>
+    <p>Tarif Paris > CDG : à partir de 60€</p>
+    <p>Tarif Paris > Orly : à partir de 50€</p>
+    <p>Contactez-nous pour un devis personnalisé</p>
   </section>
 
-  <section id="reservation">
-    <h2>Réserver un trajet</h2>
+  <section id="contact">
+    <h2>Contact & Réservation</h2>
     <form>
-      <label for="name">Nom</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="phone">Téléphone</label>
-      <input type="tel" id="phone" name="phone" required>
-
-      <label for="details">Détails du trajet</label>
-      <textarea id="details" name="details" rows="4" required></textarea>
-
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Téléphone" required>
+      <textarea placeholder="Votre message ou demande de réservation" required></textarea>
       <button type="submit">Envoyer</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 MAN-VTC. Tous droits réservés.</p>
+    <p>&copy; 2025 VTC Prestige - Tous droits réservés</p>
   </footer>
-
 </body>
 </html>
+
+
