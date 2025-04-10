@@ -130,5 +130,3 @@
     <p>&copy; 2025 MAN-VTC. Tous droits réservés.</p>
   </footer>
 
-</body>
-</html>
